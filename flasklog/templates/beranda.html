@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% for post in posts %}
+        <h1>{{post.judul}}</h1>
+        <p>By {{post.penulis}} on {{post.tgl_post}}</p>
+        <p>{{post.konten}}</p>
+    {% endfor %}
+{% endblock content %}
